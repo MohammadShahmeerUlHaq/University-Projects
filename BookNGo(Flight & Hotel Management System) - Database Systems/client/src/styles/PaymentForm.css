@@ -1,0 +1,114 @@
+.payment-form-container {
+    padding: 3rem;
+    background-color: #f7f9fc;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+.booking-type,.payment-important-head-title {
+    font-weight: bold;
+    color: #003049;
+}
+.booking-head-payment{
+    margin-top: 2rem;
+    
+}
+.payment-spacing-summary-details{
+    margin-left: 10rem;
+}
+.add-payment-option {
+    cursor: pointer;
+}
+
+.payment-card-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.payment-card-details {
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    align-items: center;
+    background-color: #ffffff; /* Added for better visibility */
+    border-radius: 8px; /* Rounded corners for card details */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for card */
+}
+
+.proceed-payment-btn {
+    background-color: #f9a825;
+    color: white;
+    border: none;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.proceed-payment-btn:hover {
+    background-color: #f57f17;
+}
+
+.cancel-link-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+
+.order-recap {
+    padding: 2rem;
+    background-color: #f8f9fa;
+}
+
+.recap-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+}
+
+.custom-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Background overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px; /* Set a fixed width for the modal */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* New styles for the remove button */
+.remove-card-btn {
+    margin-left: 1rem;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 0.25rem 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.remove-card-btn:hover {
+    background-color: #e60000;
+}
+.add-card-option-spacing{
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+}

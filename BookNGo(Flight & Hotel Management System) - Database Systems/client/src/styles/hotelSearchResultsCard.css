@@ -1,0 +1,69 @@
+.hotel-card-search-results {
+  font-family: 'Poppins', sans-serif;
+    margin: 1.5rem;
+    max-width: 20rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    text-align: left;
+  }
+  
+  .hotel-card-search-results:hover {
+    transform: translateY(-0.625rem);
+    box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.15);
+  }
+  
+  .hotel-card-img {
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+    object-fit: cover;
+    height: 12rem;
+  }
+  
+  .hotel-card-body {
+    padding: 1rem;
+  }
+  
+  .hotel-card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .hotel-card-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+  }
+  
+  .hotel-star-icon {
+    color: #ff9800;
+    font-size: 1.2rem;
+    /* margin-left: 0.15rem; Adds a small space between the text and icon */
+  }
+  
+  .star-icon-container-hotel-card {
+    display: inline-flex;
+    align-items: center; /* Ensures the text and icon are vertically aligned */
+  }
+  
+  .hotel-card-book-button {
+    background-color: #ff9800 !important;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .hotel-card-book-button:hover {
+    background-color: #e68900;
+  }
+  
+  .hotel-card-title-special-prop {
+    text-align: center;
+  }
+  .margin-right-applied-card-text{
+    margin-right: 0.35rem;
+  }

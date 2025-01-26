@@ -1,0 +1,74 @@
+/* Page Wrapper */
+.about-page-comp-wrapper {
+    background-color: #f5f7fa;
+    padding: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+  
+  /* Header Section */
+  .about-page-comp-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .about-page-comp-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #001f3f;
+    margin-bottom: 0.5rem;
+  }
+  
+  .about-page-comp-subtitle {
+    font-size: 1.2rem;
+    color: #6c757d;
+  }
+  
+  /* Section Styling */
+  .about-page-comp-section {
+    margin-bottom: 2rem;
+  }
+  
+  .about-page-comp-card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+  }
+  
+  .about-page-comp-section-title {
+    font-size: 1.8rem;
+    color: #17a2b8;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  .about-page-comp-section-text {
+    font-size: 1rem;
+    color: #343a40;
+    line-height: 1.6;
+  }
+  
+  .about-page-comp-list {
+    font-size: 1rem;
+    color: #343a40;
+    line-height: 1.8;
+    padding-left: 1.5rem;
+  }
+  
+  /* Footer Section */
+  .about-page-comp-footer {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #001f3f;
+    color: #ffffff;
+  }
+  
+  .about-page-comp-footer-title {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .about-page-comp-footer-text {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  

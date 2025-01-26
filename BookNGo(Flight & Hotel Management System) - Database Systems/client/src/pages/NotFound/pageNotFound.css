@@ -1,0 +1,41 @@
+/* Wrapper Styling */
+.error-404-comp-wrapper {
+    background-color: #f5f7fa;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    height: calc(100vh - 9.7rem);
+    justify-content: center; /* Horizontally center the content */
+    text-align: center;
+    /* align-items: center; */
+    font-family: 'Poppins', sans-serif;
+    padding-top: 9rem; /* Adjust for navbar height */
+    box-sizing: border-box; /* Include padding in the height calculation */
+  }
+  
+  /* Row Styling */
+  .error-404-comp-row {
+    margin: 0;
+  }
+  
+  /* Title Styling */
+  .error-404-comp-title {
+    font-size: 8rem;
+    font-weight: bold;
+    color: #f64a3b;
+    margin-bottom: 1rem;
+  }
+  
+  /* Subtitle Styling */
+  .error-404-comp-subtitle {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #001f3f;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Description Styling */
+  .error-404-comp-description {
+    font-size: 1.2rem;
+    color: #6c757d;
+  }
+  

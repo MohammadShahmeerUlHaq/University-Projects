@@ -1,0 +1,84 @@
+/* Card Styling */
+.packages-results-card-comp-card {
+  width: 22rem; /* 352px */
+  margin: 1.5rem auto;
+  box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.15); /* 4px 10px */
+  border-radius: 0.5rem; /* 8px */
+  overflow: hidden;
+  background-color: #ffffff;
+  transition: transform 0.2s ease-in-out;
+  font-family: 'Poppins', sans-serif;
+}
+
+.packages-results-card-comp-card:hover {
+  transform: scale(1.05);
+}
+
+/* Title Styling */
+.packages-results-card-comp-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 1rem;
+  text-align: center;
+  
+}
+
+/* Text Styling */
+.packages-results-card-comp-text {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.packages-results-card-comp-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.packages-results-card-comp-section strong {
+  font-weight: bold;
+  color: #555;
+}
+
+.packages-results-card-comp-section span {
+  color: #444;
+  text-align: right;
+}
+
+/* Rating Stars */
+.packages-results-card-comp-ratings-stars {
+  color: #ffc107;
+  font-size: 1.4rem;
+  margin-right: 0.125rem;
+}
+
+.packages-results-card-comp-ratings-stars-notfilled {
+  color: #e0e0e0;
+  font-size: 1.4rem;
+  margin-right: 0.125rem;
+}
+
+.packages-results-card-comp-ratings-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+/* Book Button */
+.packages-results-card-comp-book-button {
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.6rem 1rem;
+  border-radius: 0.3125rem; /* 5px */
+  width: 100%;
+  text-transform: uppercase;
+  background-color: #ff9800 !important;
+  transition: background-color 0.3s;
+}
+
+.packages-results-card-comp-book-button:hover {
+  background-color: #f89705 !important;
+}

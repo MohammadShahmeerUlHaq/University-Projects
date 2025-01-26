@@ -1,0 +1,70 @@
+.bookngo-package-final-details-container {
+    font-family: 'Poppins', sans-serif;
+    margin: 5rem auto;
+    padding: 2rem;
+    max-width: 50rem;
+    background-color: #f7f9fc;
+    border-radius: 1rem;
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
+}
+
+.bookngo-package-final-details-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #003049;
+    margin-bottom: 2rem;
+}
+
+.bookngo-package-final-details-box {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
+}
+
+.bookngo-package-final-details-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.bookngo-package-final-details-row label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.bookngo-package-final-details-input-field {
+    width: 100%;
+    padding: 0.6rem;
+    font-size: 1rem;
+    border-radius: 0.4rem;
+    border: 0.1rem solid #ccc;
+    background-color: #e9ecef;
+    color: #333;
+    cursor: not-allowed;
+}
+
+.bookngo-package-final-details-input-field:focus {
+    outline: none;
+    border-color: #f9a825;
+    border-width: 0.14rem;
+}
+
+.bookngo-package-final-details-proceed-button {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #f9a825;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.bookngo-package-final-details-proceed-button:hover {
+    background-color: #f57f17;
+}

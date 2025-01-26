@@ -1,0 +1,133 @@
+/* Center the cards and limit width */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.flight-search-results-comp-card {
+    border-radius: 0.625rem; /* 10px */
+    padding: 1.25rem; /* 20px */
+    margin: 1.25rem auto; /* 20px - centers card */
+    width: 65%; /* Card width at desktop */
+    /* max-width: 40.5rem;  */
+    transition: box-shadow 0.3s ease;
+    font-family: poppins;    
+}
+
+.flight-search-results-comp-card:hover {
+    box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.2); /* 4px 20px */
+}
+
+/* Title styling */
+.flight-search-results-comp-card-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    color: #007bff;
+    margin-bottom: 0; /* 10px */
+    margin-left: 0.5rem;
+}
+
+/* Ratings display */
+.flight-search-results-comp-rating {
+    font-size: 1rem;
+    color: #f39c12; /* Gold for stars */
+    margin-bottom: 0; /* 10px */
+}
+
+.flight-search-results-comp-stars {
+    display: inline-block;
+}
+
+/* Route display */
+.flight-search-results-comp-card-route {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3125rem; /* 5px */
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 0rem;
+    height: 3.5rem; 
+}
+
+.flight-search-results-comp-icon {
+    font-size: 1.2rem;
+    margin-right: 0.3125rem; /* 5px */
+}
+
+/* Info section */
+.flight-search-results-comp-card-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.95rem;
+    color: #495057;
+    margin-bottom: 1rem; /* 20px */
+}
+
+.flight-search-results-comp-departure, .flight-search-results-comp-price {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+}
+.flight-search-results-comp-price{
+    color:green;
+    font-weight: 900;
+}
+.flight-search-results-comp-price-value{
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+}
+.flight-search-results-comp-departure{
+    color: black;
+    margin-left: 0.5rem;
+}
+/* Book button styling */
+.flight-search-results-comp-book-btn {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.625rem; /* 10px */
+    background-color: #ff9800 !important;
+    transition: background-color 0.3s;
+}
+.flight-search-results-comp-book-btn:hover{
+    background-color: #f89705 !important;
+}
+.flight-search-results-comp-stars{
+    font-size: 1.5rem;
+    color: #ff9800; 
+}
+.flight-search-results-comp-stars-not-filled{
+    font-size: 1.2rem;
+    color: #ff9800;
+}
+.flight-search-results-comp-way-line{
+    font-size: 5rem;
+    color: #6c757d;
+    margin-right: 0;
+    padding-right: 0;
+}
+.flight-search-results-comp-way-pin{
+    color: red;
+    font-size: 2rem;
+}
+.flight-search-results-comp-ratingsCount{
+    color: #6c757d;
+    font-size: 1rem;
+}
+.flight-search-results-comp-origin-destination{
+    font-size: 1.2rem;
+    color:black;
+    font-weight: 900;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+.flight-search-results-comp-from{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Responsive adjustments for mobile view */
+@media (max-width: 36rem) { /* 576px */
+    .flight-search-results-comp-card {
+        width: 90%; /* Increased width for smaller screens */
+    }
+}

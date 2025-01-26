@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+.hotel-page {
+    padding-top: 8.3rem; /* Adjusted to give enough space below the navbar */
+    text-align: center;
+    background-color: #f7f7f7;
+    font-family: 'Poppins', sans-serif;    
+}
+
+/* Hero section styling */
+.hero-section {
+    background-image: url('../images/hotelHeroSection.jpg'); /* Update with your actual image file */
+    background-size: cover;
+    background-position: center;
+    padding: 5rem 0;
+    color: white;
+    text-align: center;
+    /* height: 15rem; */
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+.hotel-page {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.hotel-page .hero-section {
+    margin-top: 0; /* Ensure there's no top margin */
+}
+
+.search-container {
+    margin: 0; /* Remove margin if any */
+    padding: 0; /* Remove padding if any */
+}
+
+/* Adjust the hero heading */
+.hero-heading {
+    margin: 0; /* Remove margin */
+    padding: 1rem 0; /* Adjust padding if needed */
+}
+
+/* Search container for alignment and spacing */
+.search-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    justify-content: center; /* Center the search inputs */
+    gap: 1.5rem; /* Space between inputs */
+    margin: 0 auto 2rem auto; /* Center and add margin */
+    max-width: 80%; /* Limit the width of the search container */
+}
+
+/* Input container for positioning the icon */
+.input-container {
+    position: relative; /* To position the icon correctly */
+}
+
+/* Input field styles */
+.input-container input,
+.date-input,
+.room-type-dropdown {
+    padding: 1rem; /* Adjusted padding */
+    padding-left: 2.5rem; /* Space for left icon */
+    padding-right: 2.5rem; /* Space for right icon */
+    border-radius: 0.5rem;
+    border: 0.1rem solid #ccc;
+    font-size: 1rem; /* Use rem for font size */
+    width: 15rem; /* Consistent width for all inputs */
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+/* Outline on focus */
+.input-container input:focus,
+.date-input:focus,
+.room-type-dropdown:focus {
+    outline: none;
+    border-color: #f9a825; /* Yellow/orangish color on focus */
+    border-width: 0.2rem;
+}
+
+/* Adjust the position of the left icon (calendar icon) */
+.input-icon {
+    position: absolute;
+    left: 0.7rem; /* Adjust icon position */
+    top: 32% ; /* Center icon vertically */
+    transform: translateY(-50%);
+    color: #007bff; /* Icon color */
+    font-size: 1.2rem; /* Adjust icon size */
+}
+
+/* Hide the default calendar icon */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none; /* Hides the default calendar icon */
+}
+
+/* Adjust the position of the clear icon */
+.clear-icon {
+    position: absolute;
+    right: 0.7rem; /* Adjust this value based on your layout */
+    top: 50% ; /* Center it vertically */
+    transform: translateY(-50%);
+    cursor: pointer; /* Change cursor on hover */
+    color: #ff0000; /* Change color to red or any color you prefer */
+    
+    font-size: 1.4rem; /* Adjust size if needed */
+}
+
+/* Suggestions dropdown styling */
+.suggestions-dropdown {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: black;
+    border: 0.1rem solid #ddd;
+    border-radius: 0.5rem;
+    background-color: white;
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    max-height: 12rem; /* Limit height for 4 options */
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    overflow-y: auto; /* Allow scrolling if more than 4 items */
+}
+
+.suggestions-dropdown li {
+    display: flex; /* To place icon and text side by side */
+    align-items: center; /* Vertically center icon and text */
+    padding: 0.75rem 1rem; /* Add padding for better spacing */
+    cursor: pointer;
+    font-size: 1rem; /* Adjust font size for better readability */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    border-bottom: 0.1rem solid #ddd; /* Add border to separate items */
+}
+
+.suggestions-dropdown li:hover {
+    background-color: #f0f0f0; /* Subtle background change on hover */
+}
+
+.suggestions-dropdown li:last-child {
+    border-bottom: none; /* Remove bottom border for last item */
+}
+
+/* Location icon for dropdown items */
+.dropdown-icon {
+    color: #007bff; /* Icon color */
+    margin-right: 0.7rem; /* Space between icon and text */
+    font-size: 1.2rem; /* Icon size */
+    
+}
+
+/* Search button styles */
+.search-button {
+    background-color: #f9a825; /* Yellow color */
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem; /* Match the input height */
+    cursor: pointer;
+    font-size: 1.25rem; /* Slightly larger font for visibility */
+    display: flex; /* Align the icon properly */
+    align-items: center; /* Center the icon vertically */
+    justify-content: center; /* Center the icon horizontally */
+    width: 85%;
+    margin: 0;
+}
+
+.search-button:hover {
+    background-color: #f57f17; /* Darker yellow on hover */
+}
+
+/* Placeholder styling */
+input::placeholder {
+    color: #aaa; /* Light color for placeholder text */
+    opacity: 1; /* Ensures the placeholder is visible */
+}
+
+/* Styling for the room type dropdown */
+.room-type-dropdown {
+    padding: 1rem; /* Same padding as input fields */
+    border-radius: 0.5rem;
+    border: 0.1rem solid #ccc;
+    font-size: 1rem;
+    width: 15rem; /* Consistent width with other inputs */
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: white; /* Background color */
+    appearance: none; /* Remove default dropdown styling */
+    padding-left: 2rem;
+    position: relative; /* For positioning dropdown icon */
+}
+
+/* Add dropdown icon to the right side of the room type dropdown */
+.room-type-dropdown:after {
+    content: '▼'; /* You can use an icon font or an SVG here */
+    position: absolute;
+    right: 0.7rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #007bff; /* Icon color */
+    font-size: 1rem; /* Adjust size as needed */
+}
+
+/* Optional: Styling for when the dropdown is in focus */
+.room-type-dropdown:focus {
+    outline: none;
+    /* border-color: #007bff; Change border color on focus */
+    /* box-shadow: 0 0.2rem 0.5rem rgba(0, 123, 255, 0.5); Blue shadow on focus */
+}
+
+/* Styling for the options within the dropdown */
+.room-type-dropdown option {
+    padding: 1rem; /* Padding for options */
+    font-size: 1rem; /* Font size for options */
+}
+
+/* Hover effect for the dropdown */
+.room-type-dropdown:hover {
+    background-color: #f0f0f0; /* Subtle background change on hover */
+}
+
+.citySearch {
+    width: 85%;
+    margin-bottom: 0 !important;
+}
+
+.citySearch > input {
+    width: 100%;
+}
+
+.inputDropdown {
+    margin-bottom: 0;
+}
+
+.date-icon, .city-icon , .room-icon{
+    top: 46%;
+}
+
+/* Add to your CSS file */
+
+.heroTagline {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem; /* Adjust size as needed */
+    color: #4A90E2; /* A soft blue color */
+    text-align: center; /* Center the text */
+    margin: 1.5rem 0; /* Add vertical spacing */
+    font-weight: bold; /* Make it bold */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    color: white;
+    font-weight: 900;
+    
+}
+
+.hotel-cards-container .hotel-card {
+    flex: 0 1 18.75rem; /* Adjust based on the card width */
+    margin: 15px;
+}
+.error-message-hotel-search-results{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.7rem; /* Adjust size for better visibility */
+    color: #4A90E2; /* Soft blue for consistency */
+    font-weight: 600;
+    padding-top: 4rem;
+    padding-bottom: 4rem; /* Space between heading and sort container */
+    text-align: center;
+    padding-left: 2rem; /* Align with the page's main layout */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+    background-color: #f7f7f7;
+    color: #333;
+    margin-bottom: 0;
+    
+}
+/* Styling for the results matched heading */
+.hotel-search-results-matched-head {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem; /* Adjust size for better visibility */
+    color: #4A90E2; /* Soft blue for consistency */
+    font-weight: 900;
+    padding-top: 4rem;
+    padding-bottom: 4rem; /* Space between heading and sort container */
+    text-align: center;
+    padding-left: 2rem; /* Align with the page's main layout */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+    background-color: #f7f7f7;
+    color: #333;
+    margin-bottom: 0;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+/* Sort container styling */
+.sort-container {
+    display: flex;
+    justify-content: flex-end; /* Align to the left for consistency */
+    align-items: center;
+    gap: 1rem; /* Space between elements */
+    margin-bottom: 1.5rem; /* Space between sort box and hotel cards */
+    padding-left: 2rem;
+    
+    background-color: #f7f7f7; /* Light background for contrast */
+    border-radius: 0.5rem;
+    padding: 1rem; /* Increase padding for space */
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    margin-top: 0;
+}
+
+.sort-container label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #333; /* Dark color for readability */
+    font-size: 1rem;
+}
+
+/* Sort dropdown styling */
+.sort-dropdown {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    background-color: white; /* Clean background */
+    color: #333; /* Text color for readability */
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    transition: border-color 0.3s ease;
+}
+
+.sort-dropdown:focus {
+    outline: none;
+    border-color: #4A90E2; /* Consistent focus color */
+}
+
+/* Add a hover effect to the dropdown */
+.sort-dropdown:hover {
+    border-color: #007bff; /* Darker blue on hover */
+}
+
+/* Sort icon styling */
+.sort-icon {
+    color: #007bff;
+    font-size: 1.2rem;
+}
+
+
+/* Hotel Cards container */
+.hotel-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .hotel-page{
+        padding-top: 4rem;
+    }
+    .search-container {
+        flex-direction: column; /* Stack items vertically on small screens */
+    }
+
+    .input-container input,
+    .room-type-dropdown{
+        width: 100%; /* Full width on smaller screens */
+    }
+    .search-button{
+        width: 100%;
+    }
+    .citySearch{
+        width: 100%;
+    }
+}

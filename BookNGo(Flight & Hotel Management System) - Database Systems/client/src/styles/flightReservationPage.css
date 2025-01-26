@@ -1,0 +1,94 @@
+.flight-reservation-comp-page {
+    font-family: 'Poppins', sans-serif;
+    padding: 2rem;
+    background-color: #f7f9fc;
+    border-radius: 1rem;
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
+    max-width: 50rem;
+    margin: 5rem auto;
+}
+
+.flight-reservation-comp-title {
+    font-size: 2rem;
+    text-align: center;
+    color: #003049;
+    margin-bottom: 1.5rem;
+    font-weight: 900;
+}
+
+.flight-reservation-comp-form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
+}
+
+.flight-reservation-comp-field {
+    margin-bottom: 1.5rem;
+}
+
+.flight-reservation-comp-input, .flight-reservation-comp-input-readonly {
+    width: 100%;
+    padding: 0.6rem;
+    font-size: 1rem;
+    border-radius: 0.4rem;
+    border: 0.1rem solid #ccc;
+    box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.05);
+}
+
+.flight-reservation-comp-input-readonly {
+    background-color: #e9ecef;
+    cursor: not-allowed;
+}
+
+.flight-reservation-comp-traveller-info {
+    margin-bottom: 1.5rem;
+}
+
+.flight-reservation-comp-traveller-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.flight-reservation-comp-input-small {
+    flex: 1;
+    padding: 0.6rem;
+    font-size: 1rem;
+    border-radius: 0.4rem;
+    border: 0.1rem solid #ccc;
+    box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.05);
+}
+
+.flight-reservation-comp-button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #f9a825;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.flight-reservation-comp-button:hover {
+    background-color: #f57f17;
+}
+.flight-reservation-comp-traveller-info {
+    margin-bottom: 1.5rem;
+}
+
+.flight-reservation-comp-traveller-row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem; /* Adds space between name row and passport row */
+}
+
+.flight-reservation-comp-input-small {
+    flex: 1;
+    padding: 0.6rem;
+    font-size: 1rem;
+    border-radius: 0.4rem;
+    border: 0.1rem solid #ccc;
+    box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.05);
+}

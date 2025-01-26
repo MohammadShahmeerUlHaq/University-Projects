@@ -1,0 +1,163 @@
+/* General Container */
+.package-details-container {
+  max-width: 40rem;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #f9fafb;
+  border-radius: 0.8rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Headings and Descriptions */
+.package-details-heading {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  color: #212529;
+  margin-bottom: 1rem;
+}
+
+.package-details-description {
+  font-size: 1rem;
+  color: #6c757d;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Form Layout */
+.package-details-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.package-details-row {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Input Styling */
+.package-details-field {
+  flex: 1;
+  height: 2.5rem;
+  font-size: 1rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.4rem;
+  border: 1px solid #ced4da;
+  background-color: #ffffff;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+}
+
+.package-details-field:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0.3rem rgba(0, 123, 255, 0.3);
+}
+
+/* Dropdown Styling */
+.package-details-dropdown {
+  flex: 1;
+}
+
+.package-details-dropdown-toggle {
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 0.4rem;
+  padding: 0.4rem 0.8rem;
+  background-color: #ffffff;
+  color: #495057;
+  font-size: 1rem;
+  text-align: left;
+  border: 1px solid #ced4da;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+  background-color: #f8f9fa !important;
+}
+
+.package-details-dropdown-toggle:hover {
+  background-color: #e9ecef; /* Slightly darker gray for hover */
+  border-color: #adb5bd; /* Subtle hover effect */
+  color: #495057;
+  
+}
+
+.package-details-dropdown-list-menu {
+  width: 100%;
+  border-radius: 0.4rem;
+}
+
+.package-details-dropdown-list-item {
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+.package-details-dropdown-list-item:hover {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+/* Price Box */
+.package-details-price-box {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.package-details-price {
+  flex: 1;
+  height: 2.5rem;
+  font-size: 1rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.4rem;
+  border: 1px solid #ced4da;
+  background-color: #f8f9fa;
+  color: #495057;
+}
+.package-details-label-items-rows {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 0;
+}
+.package-details-label-items {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center; /* Center align text */
+  width: 48%; /* Take the same width as the dropdown and price box */
+}
+/* Error Message */
+.package-details-error {
+  color: #d9534f;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* Button Styling */
+.package-details-btn {
+  flex: 1;
+  height: 2.5rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  color: white;
+  background-color: #007bff;
+  background-color: #ff9800 !important;
+    
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.package-details-btn.confirm {
+  background-color: #ff9800 !important;
+    
+}
+
+.package-details-btn:hover {
+  opacity: 0.9;
+  background-color: #f9a825 !important;
+    
+}

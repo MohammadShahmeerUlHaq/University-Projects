@@ -1,0 +1,197 @@
+/* General Container */
+.admin-hotels-comp-container {
+  font-family: 'Poppins', sans-serif;
+  padding: 2rem;
+  background-color: #f7f7f7;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Page Title */
+.admin-hotels-comp-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Add Button */
+.admin-hotels-comp-add-btn {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: 0;
+  margin-bottom: 1.5rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.admin-hotels-comp-add-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Table Styling */
+.admin-hotels-comp-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.admin-hotels-comp-thead th {
+  background-color: #007bff;
+  color: #fff;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.admin-hotels-comp-tbody td {
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+  font-size: 1rem;
+  color: #333;
+}
+
+.admin-hotels-comp-tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.admin-hotels-comp-tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Modal Styling */
+.admin-hotels-comp-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.admin-hotels-comp-modal .modal-dialog {
+  width: 90%;
+  max-width: 50rem; /* Adjusted modal width for better size */
+  border-radius: 0.5rem;
+  background-color: #fff;
+}
+
+.admin-hotels-comp-modal .modal-content {
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+.admin-hotels-comp-modal .modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.admin-hotels-comp-modal .modal-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.admin-hotels-comp-modal .modal-header button {
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  background: transparent;
+  color: #333;
+  cursor: pointer;
+}
+
+.admin-hotels-comp-modal .modal-body input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.admin-hotels-comp-modal .modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.admin-hotels-comp-modal .btn {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.admin-hotels-comp-modal .btn-secondary {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.admin-hotels-comp-modal .btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+.admin-hotels-comp-modal .btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.admin-hotels-comp-modal .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .admin-hotels-comp-title {
+    font-size: 2rem;
+  }
+
+  .admin-hotels-comp-add-btn {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .admin-hotels-comp-table th,
+  .admin-hotels-comp-table td {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  .admin-hotels-comp-modal .modal-content {
+    padding: 1.5rem;
+  }
+
+  .admin-hotels-comp-modal .modal-body input {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+
+  .admin-hotels-comp-modal .btn {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+  }
+}
