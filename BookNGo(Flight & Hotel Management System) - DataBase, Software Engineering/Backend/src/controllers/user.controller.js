@@ -281,8 +281,8 @@ const registerUser = (req, res) => {
 
         // 6. Check if the username or email already exists
         connection.query(
-            'SELECT * FROM User WHERE userName = ? OR email = ?',
-            [userName, email],
+            'SELECT * FROM User WHERE userName = ? OR email = ? OR cnicOrPassport = ? ',
+            [userName, email,cnicOrPassport],
             (err, rows) => {
                 if (err) {
                     console.error('Error checking user existence:', err);
@@ -290,7 +290,19 @@ const registerUser = (req, res) => {
                 }
 
                 if (rows.length > 0) {
-                    return res.status(409).json({ error: 'Username or email already taken.' });
+                    const existing = rows[0];
+                    if (existing.userName === userName) {
+                        return res.status(409).json({ error: 'Username already taken.' });
+                    }
+                    if (existing.email === email) {
+                        return res.status(409).json({ error: 'Email already registered.' });
+                    }
+                    if (existing.cnicOrPassport === cnicOrPassport) {
+                        return res.status(409).json({ error: 'CNIC or Passport already in use.' });
+                    }
+        
+                    // Fallback generic conflict
+                    return res.status(409).json({ error: 'User already exists with provided credentials.' });
                 }
 
                 // 7. Insert new user into the database
@@ -300,6 +312,7 @@ const registerUser = (req, res) => {
                     (err, result) => {
                         if (err) {
                             console.error('Error inserting user:', err);
+                            
                             return res.status(500).json({ error: 'Failed to register user.' });
                         }
 

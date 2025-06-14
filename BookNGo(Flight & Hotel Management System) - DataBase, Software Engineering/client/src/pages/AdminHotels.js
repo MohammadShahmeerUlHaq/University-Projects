@@ -39,7 +39,21 @@ export default function AdminHotels() {
   };
 
   const handleAddHotel = async () => {
+    if(formData.pricePerNightDeluxe<=0 || formData.pricePerNightStandard<=0){
+      alert('Price of rooms should be greater than 0')
+      return 
+    }
+    if(formData.standard<=0 && formData.deluxe<=0){
+      alert('No of rooms should be positive')
+      return 
+    }
+    if(formData.standard<0 || formData.deluxe<0){
+      alert('No of rooms should be positive')
+      return 
+    }
+
     try {
+
       const response = await axios.post('http://localhost:8000/api/v1/admins/addHotel', {
         name: formData.name,
         standard: formData.standard,
@@ -67,6 +81,7 @@ export default function AdminHotels() {
   const handleEditClick = (hotel) => {
     setIsEditing(true);
     setEditHotel(hotel); // Store the selected hotel to edit
+    
     setFormData({
       id: hotel.id,
       name: hotel.name,
@@ -81,6 +96,18 @@ export default function AdminHotels() {
 
   const handleUpdateHotel = async () => {
     try {
+      if(formData.pricePerNightDeluxe<=0 || formData.pricePerNightStandard<=0){
+        alert('Price of rooms should be greater than 0')
+        return 
+      }
+      if(formData.standard<=0 && formData.deluxe<=0){
+        alert('No of rooms should be positive')
+        return 
+      }
+      if(formData.standard<0 || formData.deluxe<0){
+        alert('No of rooms should be positive')
+        return 
+      }
       const response = await axios.post('http://localhost:8000/api/v1/admins/updateHotel', {
         id: formData.id,
         standard: formData.standard,

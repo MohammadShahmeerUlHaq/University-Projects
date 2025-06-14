@@ -43,6 +43,7 @@ export default function AdminAirlines() {
       getAirlines();
     } catch (error) {
       console.error('Error adding airline:', error);
+      alert(error.response.data.error)
     }
   };
 

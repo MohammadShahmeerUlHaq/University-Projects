@@ -33,10 +33,17 @@ export const addAirline = async (req, res) => {
         );
         res.status(201).json({ message: 'Airline added successfully.' });
     } catch (error) {
-        console.error(error.message);
-        res.status(500).json({ error: 'Error adding airline' });
+        console.error('Error adding airline:', error);
+
+        // Check for duplicate entry error
+        if (error.original && error.original.code === 'ER_DUP_ENTRY') {
+            return res.status(409).json({ error: 'Airline already exists.' });
+        }
+
+        res.status(500).json({ error: 'Error adding airline.' });
     }
 };
+
 
 export const getAllHotels = async (req, res) => {
     try {
@@ -91,6 +98,9 @@ export const addHotel = async (req, res) => {
         res.status(201).json({ message: 'Hotel added successfully.' });
     } catch (error) {
         console.error(error.message);
+        if (error.original && error.original.code === 'ER_DUP_ENTRY') {
+            return res.status(409).json({ error: 'Hotel already exists.' });
+        }
         res.status(500).json({ error: 'Error adding hotel' });
     }
 };

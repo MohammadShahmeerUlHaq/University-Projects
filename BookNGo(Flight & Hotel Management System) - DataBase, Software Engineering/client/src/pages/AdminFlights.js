@@ -57,13 +57,39 @@ export default function AdminFlights() {
   };
 
   const handleAddFlight = async () => {
+    if (formData.numSeats <= 0) {
+      alert('Number of seats should be greater than 0');
+      return;
+    }
+  
+    if (formData.price <= 0) {
+      alert('Price should be greater than 0');
+      return;
+    }
+  
+    const departureTime = new Date(formData.departure);
+    const now = new Date();
+  
+    if (isNaN(departureTime.getTime())) {
+      alert('Invalid departure time');
+      return;
+    }
+  
+    if (departureTime <= now) {
+      alert('Departure time must be in the future');
+      return;
+    }
+  
     try {
-        console.log({airlineName: formData.airlineName,
-            departure: formData.departure,
-            destination: formData.destination,
-            origin: formData.origin,
-            price: formData.price,
-            numSeats: formData.numSeats})
+      console.log({
+        airlineName: formData.airlineName,
+        departure: formData.departure,
+        destination: formData.destination,
+        origin: formData.origin,
+        price: formData.price,
+        numSeats: formData.numSeats,
+      });
+  
       await axios.post('http://localhost:8000/api/v1/admins/addFlight', {
         airlineName: formData.airlineName,
         departure: formData.departure,
@@ -72,6 +98,7 @@ export default function AdminFlights() {
         price: formData.price,
         numSeats: formData.numSeats,
       });
+  
       setShowModal(false);
       setFormData({
         id: '',
@@ -87,9 +114,10 @@ export default function AdminFlights() {
       getFlights();
     } catch (error) {
       console.error('Error adding flight:', error);
-      alert(error?.response?.data?.error)
+      alert(error?.response?.data?.error || 'Failed to add flight');
     }
   };
+  
 
   const handleEditClick = (flight) => {
     setIsEditing(true);
@@ -110,6 +138,14 @@ export default function AdminFlights() {
 
   const handleUpdateFlight = async () => {
     try {
+      if (formData.numSeats<=0) {
+        alert('Number of seats should be greater than 0')
+        return
+      }
+      if(formData.price<=0){
+        alert('Price should be greater than 0')
+        return
+      }
       await axios.post('http://localhost:8000/api/v1/admins/updateFlight', {
         id: formData.id,
         departure: formData.departure,

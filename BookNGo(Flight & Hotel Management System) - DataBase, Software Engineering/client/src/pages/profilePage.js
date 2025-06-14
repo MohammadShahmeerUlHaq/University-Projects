@@ -66,7 +66,7 @@ export default function ProfilePage() {
         hour: 'numeric',
         minute: 'numeric',
         second: 'numeric',
-        hour12: true    // 12-hour format, set to false for 24-hour
+        hour12: true    
     });
 };
   // Function to render the stars for ratings
